@@ -1,0 +1,74 @@
+<!-- HTML Table Borders
+HTML tables can have borders of different styles and shapes. -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table Borders</title>
+    <style>
+      /* To add a border, use the CSS border property on table, th, and td elements: */
+      table,
+      th,
+      td {
+        border: 1px solid black;
+        /* Collapsed Table Borders
+To avoid having double borders like in the example above, set the CSS border-collapse property to collapse.
+
+This will make the borders collapse into a single border: */
+        border-collapse: collapse;
+        /* Dotted Table Borders
+With the border-style property, you can set the appereance of the border. */
+        border-style: dotted;
+        /* The following values are allowed:
+
+dotted     
+dashed     
+solid     
+double     
+groove     
+ridge     
+inset     
+outset     
+none     
+hidden      */
+      }
+      table {
+        width: 100%;
+      }
+      th,
+      td {
+        background-color: #96d4d4;
+        /* Round Table Borders
+With the border-radius property, the borders get rounded corners: */
+        border-radius: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Table with border</h1>
+    <table>
+      <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Age</th>
+      </tr>
+      <tr>
+        <td>Jill</td>
+        <td>Smith</td>
+        <td>50</td>
+      </tr>
+      <tr>
+        <td>Eve</td>
+        <td>Jackson</td>
+        <td>94</td>
+      </tr>
+      <tr>
+        <td>John</td>
+        <td>Doe</td>
+        <td>80</td>
+      </tr>
+    </table>
+  </body>
+</html>

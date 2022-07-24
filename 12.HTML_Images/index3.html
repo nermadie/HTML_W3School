@@ -1,0 +1,41 @@
+<!-- HTML Background Images
+A background image can be specified for almost any HTML element. -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Background Images</title>
+    <style>
+      body {
+        /* Background Cover
+If you want the background image to cover the entire element, you can set the background-size property to cover.
+
+Also, to make sure the entire element is always covered, set the background-attachment property to fixed:
+
+This way, the background image will cover the entire element, with no stretching (the image will keep its original proportions): */
+        background-image: url("img_orange_flowers.jpg");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Background Image on a HTML element
+To add a background image on an HTML element, use the HTML style attribute and the CSS background-image property: -->
+    <!-- Background Stretch
+If you want the background image to stretch to fit the entire element, you can set the background-size property to 100% 100%: -->
+    <p
+      style="background-image: url('workplace.jpg'); background-size: 100% 100%"
+    >
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus esse
+      dolorum cumque dicta officia fugit explicabo, soluta inventore maiores
+      deserunt, accusamus at porro est iusto atque distinctio beatae fugiat
+      minus.
+    </p>
+    <!-- Background Repeat
+If the background image is smaller than the element, the image will repeat itself, horizontally and vertically, until it reaches the end of the element: -->
+  </body>
+</html>

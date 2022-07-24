@@ -1,0 +1,72 @@
+<!-- HTML tables can adjust the padding inside the cells, and also the space between the cells. -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table Padding & Spacing</title>
+    <style>
+      table,
+      th,
+      td {
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Table Padding & Spacing</h1>
+    <h2>1.HTML Table - Cell Padding</h2>
+    <table style="width: 100%">
+      <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Age</th>
+      </tr>
+      <tr>
+        <!-- To add padding only above the content, use the padding-top property.
+            And the others sides with the padding-bottom, padding-left, and padding-right properties: -->
+        <td style="padding: 15px; color: red">Jill</td>
+        <td>Smith</td>
+        <td>50</td>
+      </tr>
+      <tr>
+        <td style="padding-left: 20px; color: blue">Eve</td>
+        <td>Jackson</td>
+        <td>94</td>
+      </tr>
+      <tr>
+        <td>John</td>
+        <td>Doe</td>
+        <td>80</td>
+      </tr>
+    </table>
+    <h2>2.HTML Table - Cell Spacing</h2>
+    <!-- HTML Table - Cell Spacing
+        Cell spacing is the space between each cell.
+        By default the space is set to 2 pixels.
+        To change the space between table cells, use the CSS border-spacing property on the table element: -->
+    <table style="width: 100%; border-spacing: 10px">
+      <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Age</th>
+      </tr>
+      <tr>
+        <td>Jill</td>
+        <td>Smith</td>
+        <td>50</td>
+      </tr>
+      <tr>
+        <td>Eve</td>
+        <td>Jackson</td>
+        <td>94</td>
+      </tr>
+      <tr>
+        <td>John</td>
+        <td>Doe</td>
+        <td>80</td>
+      </tr>
+    </table>
+  </body>
+</html>

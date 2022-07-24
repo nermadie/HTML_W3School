@@ -1,0 +1,79 @@
+<!-- Links are found in nearly all web pages. Links allow users to click their way from page to page. -->
+<!-- HTML Links - Hyperlinks
+HTML links are hyperlinks.
+
+You can click on a link and jump to another document.
+
+When you move the mouse over a link, the mouse arrow will turn into a little hand.
+
+Note: A link does not have to be text. A link can be an image or any other HTML element! -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Links</title>
+  </head>
+  <body>
+    <!-- By default, links will appear as follows in all browsers:
+
+An unvisited link is underlined and blue
+A visited link is underlined and purple
+An active link is underlined and red -->
+    <a href="https://www.w3schools.com/">Visit w3schools.com!</a>
+    <!-- The target attribute specifies where to open the linked document.
+
+The target attribute can have one of the following values:
+
+_self - Default. Opens the document in the same window/tab as it was clicked
+_blank - Opens the document in a new window or tab
+_parent - Opens the document in the parent frame
+_top - Opens the document in the full body of the window -->
+    <!-- Absolute URLs vs. Relative URLs -->
+    <iframe
+      width="500"
+      height="100"
+      style="border: 3px dashed #808cf8; padding: 30px 0 0 30px"
+      srcdoc="<a target='_self' href='../1.HTML Home/index.html'>HTML Tutorial</a>
+      <a target='_blank' href='../1.HTML Home/index.html'>HTML Tutorial</a>
+      <a target='_parent' href='../1.HTML Home/index.html'>HTML Tutorial</a>
+      <a target='_top' href='../1.HTML Home/index.html'>HTML Tutorial</a>"
+    >
+    </iframe>
+    <!-- HTML Links - Use an Image as a Link
+To use an image as a link, just put the <img> tag inside the <a> tag: -->
+    <a href="https://www.w3schools.com/html/html_links.asp">
+      <img
+        width="50"
+        height="50"
+        src="https://yt3.ggpht.com/dW6to0x5Crmeh7yi-YPLcQRqVrBtx2BSh8eoKTJbE8NbjloQ0sqlmdszIlxokJU_97-ndOt_=s900-c-k-c0x00ffffff-no-rj"
+        alt="w3schools"
+      />
+    </a>
+    <!-- Link to an Email Address
+Use mailto: inside the href attribute to create a link that opens the user's email program (to let them send a new email): -->
+    <a href="mailto:nhatminh10b1@gmail.com">Send mail to me</a>
+    <!-- Button as a Link
+To use an HTML button as a link, you have to add some JavaScript code.
+
+JavaScript allows you to specify what happens at certain events, such as onclick-->
+    <button
+      title="Open CSS File"
+      onclick="document.location='../10.HTML_CSS/index.html'"
+    >
+      CSS File
+    </button>
+    <!-- Link Titles
+The title attribute specifies extra information about an element. The information is most often shown as a tooltip text when the mouse moves over the element. -->
+    <!-- 
+More on Absolute URLs and Relative URLs -->
+    <a href="https://www.w3schools.com/html/default.asp">HTML Tutorial</a>
+  </body>
+</html>
+<!-- Chapter Summary
+Use the <a> element to define a link
+Use the href attribute to define the link address
+Use the target attribute to define where to open the linked document
+Use the <img> element (inside <a>) to use an image as a link
+Use the mailto: scheme inside the href attribute to create a link that opens the user's email program -->

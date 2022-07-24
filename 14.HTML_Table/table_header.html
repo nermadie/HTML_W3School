@@ -1,0 +1,159 @@
+<!-- HTML tables can have headers for each column or row, or for many columns/rows. -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table Header</title>
+    <style>
+      table,
+      td,
+      th {
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Table Header</h1>
+    <h2>1.Table Header</h2>
+    <!-- HTML Table Headers
+Table headers are defined with th elements, each th element represents a table cell. -->
+    <table>
+      <tr>
+        <td>Firstname</td>
+        <td>Lastname</td>
+        <td>Age</td>
+      </tr>
+      <tr>
+        <td>Jill</td>
+        <td>Smith</td>
+        <td>50</td>
+      </tr>
+      <tr>
+        <td>Eve</td>
+        <td>Jackson</td>
+        <td>94</td>
+      </tr>
+    </table>
+    <h2>2.Horizontal Table Headers</h2>
+    <table>
+      <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Age</th>
+      </tr>
+      <tr>
+        <td>Jill</td>
+        <td>Smith</td>
+        <td>50</td>
+      </tr>
+      <tr>
+        <td>Eve</td>
+        <td>Jackson</td>
+        <td>94</td>
+      </tr>
+    </table>
+    <h2>3.Vertical Table Headers</h2>
+    <!-- To use the first column as table headers, define the first cell in each row as a th element: -->
+    <table>
+      <tr>
+        <th>Firstname</th>
+        <td>Lastname</td>
+        <td>Age</td>
+      </tr>
+      <tr>
+        <th>Jill</th>
+        <td>Smith</td>
+        <td>50</td>
+      </tr>
+      <tr>
+        <th>Eve</th>
+        <td>Jackson</td>
+        <td>94</td>
+      </tr>
+    </table>
+    <h2>4.Align Table Headers</h2>
+    <!-- By default, table headers are bold and centered: 
+    To left-align the table headers, use the CSS text-align property:-->
+    <table style="width: 100%">
+      <tr>
+        <th style="text-align: left">Firstname</th>
+        <th>Lastname</th>
+        <th>Age</th>
+      </tr>
+      <tr>
+        <td>Jill</td>
+        <td>Smith</td>
+        <td>50</td>
+      </tr>
+      <tr>
+        <td>Eve</td>
+        <td>Jackson</td>
+        <td>94</td>
+      </tr>
+    </table>
+    <h2>5.Header for Multiple Columns</h2>
+    <!-- You can have a header that spans over two or more columns.
+    To do this, use the colspan attribute on the <th> element: -->
+    <table style="width: 100%">
+      <tr>
+        <th colspan="2">Name</th>
+        <th>Age</th>
+      </tr>
+      <tr>
+        <td>Jill</td>
+        <td>Smith</td>
+        <td>50</td>
+      </tr>
+      <tr>
+        <td>Eve</td>
+        <td>Jackson</td>
+        <td>94</td>
+      </tr>
+    </table>
+    <h2>6.Header for Multiple Rows</h2>
+    <table>
+      <tr>
+        <th></th>
+        <th>Wednesday</th>
+        <th>Friday</th>
+      </tr>
+      <tr>
+        <th rowspan="2">Name</th>
+        <td>Minh</td>
+        <td>Trieu</td>
+      </tr>
+      <tr>
+        <td>Ha</td>
+        <td>Dat</td>
+      </tr>
+      <tr>
+        <th>Hoc phi</th>
+        <td>OK</td>
+        <td>OK</td>
+      </tr>
+    </table>
+    <h2>7.Table Caption</h2>
+    <!-- You can add a caption that serves as a heading for the entire table.
+    To add a caption to a table, use the <caption> tag.-->
+    <table>
+      <caption>
+        Monthly savings
+      </caption>
+      <tr>
+        <th>Month</th>
+        <th>Savings</th>
+      </tr>
+      <tr>
+        <td>January</td>
+        <td>$100</td>
+      </tr>
+      <tr>
+        <td>February</td>
+        <td>$50</td>
+      </tr>
+    </table>
+    <!-- Note: The <caption> tag should be inserted immediately after the <table> tag. -->
+  </body>
+</html>

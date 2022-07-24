@@ -1,0 +1,85 @@
+<!-- The src Attribute
+The required src attribute specifies the path (URL) to the image.
+
+Note: When a web page loads, it is the browser, at that moment, that gets the image from a web server and inserts it into the page. Therefore, make sure that the image actually stays in the same spot in relation to the web page, otherwise your visitors will get a broken link icon. The broken link icon and the alt text are shown if the browser cannot find the image. -->
+<!-- The alt Attribute
+The required alt attribute provides an alternate text for an image, if the user for some reason cannot view it (because of slow connection, an error in the src attribute, or if the user uses a screen reader). -->
+<!-- Tip: A screen reader is a software program that reads the HTML code, and allows the user to "listen" to the content. Screen readers are useful for people who are visually impaired or learning disabled. -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Images</title>
+    <style>
+      .image img {
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Image Size - Width and Height
+You can use the style attribute to specify the width and height of an image. -->
+    <img
+      style="width: 200px; height: 200px"
+      src="https://images.theconversation.com/files/457052/original/file-20220408-15-pl446k.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=1000&fit=clip"
+      alt="Cat images"
+    />
+    <!-- Alternatively, you can use the width and height attributes: -->
+    <img
+      width="200px"
+      height="200px"
+      src="https://images.theconversation.com/files/457052/original/file-20220408-15-pl446k.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=1000&fit=clip"
+      alt="Cat images"
+    />
+    <!-- The width and height attributes always define the width and height of the image in pixels.
+
+Note: Always specify the width and height of an image. If width and height are not specified, the web page might flicker while the image loads. -->
+    <!-- Width and Height, or Style?
+The width, height, and style attributes are all valid in HTML.
+
+However, we suggest using the style attribute. It prevents styles sheets from changing the size of images: -->
+    <div class="image">
+      <img
+        src="https://images.theconversation.com/files/457052/original/file-20220408-15-pl446k.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=1000&fit=clip"
+        alt="HTML5 Icon"
+        width="128"
+        height="128"
+      />
+
+      <img
+        src="https://images.theconversation.com/files/457052/original/file-20220408-15-pl446k.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=1000&fit=clip"
+        alt="HTML5 Icon"
+        style="width: 128px; height: 128px"
+      />
+    </div>
+    <p>
+      <img
+        src="https://images.theconversation.com/files/457052/original/file-20220408-15-pl446k.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=1000&fit=clip"
+        alt="HTML5 Icon"
+        style="width: 128px; height: 128px; float: left"
+      />Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus
+      voluptatem quas illo suscipit culpa nisi officiis nostrum molestiae
+      aliquam earum obcaecati perspiciatis accusamus tempora totam minus maxime,
+      est harum dolore.
+    </p>
+    <p>
+      <img
+        src="https://images.theconversation.com/files/457052/original/file-20220408-15-pl446k.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=1000&fit=clip"
+        alt="HTML5 Icon"
+        style="width: 128px; height: 128px; float: right"
+      />Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus
+      voluptatem quas illo suscipit culpa nisi officiis nostrum molestiae
+      aliquam earum obcaecati perspiciatis accusamus tempora totam minus maxime,
+      est harum dolore.
+    </p>
+  </body>
+</html>
+<!-- Chapter Summary
+Use the HTML <img> element to define an image
+Use the HTML src attribute to define the URL of the image
+Use the HTML alt attribute to define an alternate text for an image, if it cannot be displayed
+Use the HTML width and height attributes or the CSS width and height properties to define the size of the image
+Use the CSS float property to let the image float to the left or to the right
+Note: Loading large images takes time, and can slow down your web page. Use images carefully. -->
